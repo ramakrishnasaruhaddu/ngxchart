@@ -1,0 +1,80 @@
+<div class="container-fluid">
+
+   <nav class="navbar navbar-expand-sm navbar-light bg-light">
+     
+    
+     <div class="collapse navbar-collapse" id="collapsibleNavId">
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+         <li class="nav-item active">
+           <a class="nav-link" routerLink="bar-chart">BarChart</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" routerLink="doughnut-chart">DoughnutChart</a>
+         </li>
+         <li class="nav-item">
+          <a class="nav-link" routerLink="radar-chart">RadarChart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="pie-chart">PieChart</a>
+        </li>
+        
+       </ul>
+      
+     </div>
+   </nav>
+  
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/bar-chart">Bar Chart</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/doughnut-chart">Doughnut Chart</a>
+      </li>
+      <li class="nav-item">
+         <a class="nav-link" routerLink="/radar-chart">Radar Chart</a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/pie-chart">Pie Chart</a>
+     </li> 
+    </ul>
+
+    <div>
+         <router-outlet></router-outlet>
+    </div>
+</div>
+
+<!--<h1>hello how are u</h1>
+
+<div *ngIf="couses.length > 0; then courseslist else noCourses">
+
+</div>
+<ng-template #courseslist>
+  courses list
+</ng-template>
+<ng-template #noCourses>
+  No Courses Yet
+</ng-template>
+
+ <div [hidden]='couses.length==0'>
+   List of Coureses
+
+ </div>
+
+<div [hidden]='couses.length>0'>
+  No courses Yet
+</div>
+<div>
+<ul class="nav nav-pills">
+  <li [class.active]="viewMode=='map'"><a (click)="viewMode='map'">Map View</a></li>
+  <li [class.active]="viewMode=='list'"><a (click)="viewMode='list'">List View</a></li>
+  
+
+</ul>
+
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map View Content</div>
+  
+  <div *ngSwitchCase="'list'">List view Content</div>
+  <div *ngSwitchDefault>Otherwise</div>
+
+</div>-->
